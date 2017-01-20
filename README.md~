@@ -1,0 +1,7 @@
+# Gulp
+
+## steps of creating a gulp project
+
+- create a 'app' directory
+- create `package.json` using `npm init`
+- install gulp `npm install gulp --save`

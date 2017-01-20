@@ -1,0 +1,27 @@
+{
+  "name": "gulptest",
+  "version": "1.0.0",
+  "description": "A tiny project to show gulp functionalities off",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdegenne/example-gulp.git"
+  },
+  "keywords": [
+    "gulp",
+    "example"
+  ],
+  "author": "Valentin Degenne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdegenne/example-gulp/issues"
+  },
+  "homepage": "https://github.com/vdegenne/example-gulp#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
