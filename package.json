@@ -4,7 +4,9 @@
   "description": "A tiny project to show gulp functionalities off",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "helloworld": "printf '%s\n' HELLO",
+    "deps": "npm install"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,8 @@
     "url": "https://github.com/vdegenne/example-gulp/issues"
   },
   "homepage": "https://github.com/vdegenne/example-gulp#readme",
-  "dependencies": {},
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1"
   }
 }
