@@ -6,17 +6,50 @@ Gulp is a building helper node tool particularly famous for website designing pr
 
 ### ES2015
 
-this project is using es2015, to avoid compatibility problem, I suggest to install 
-*app* contains a small set of files simulating a project.
+this project is using ecmascript-6, when you download the dependencies, babel will automatically get installed
+
+`.babelrc` defines the language babel is using
+
+### Gulp 4.0
+
+Also this project uses Gulp version 4, 
+when you download the dependencies Gulp 4.0 will automatically get installed from the github repo
+if you try to use `npm install gulp --save-dev` it will fail because gulp 4.0 is not yet registered in npm.
+
+However you'll also need to install the last version of gulp-cli to run the tasks from command line
+```sh
+# to install the command line tool
+npm install 'gulpjs/gulp-cli' -g
+```
+
+### Start
+
+**app** contains a small set of files simulating a project.
 you'll need to install the dependencies
 
-		npm run deps
+```sh
+npm run deps
+```
 
-once the dependencies are installed, look into `gulpfile.babel.js`
+Once the dependencies are installed, look into `gulpfile.babel.js`
 there are defined es2015 tasks for gulp, to execute one task
 run
 
-		gulp <task-name>
+```sh
+gulp <task-name>
+```
+
+Everytime you run a task, the directory `dist` will get deleted
+This way you can see the effect of a particular task in the project
+
+The following tasks are available :
+
+- clean : will remove the `dist` directory
+- build_styles : will copy all css files in `dist/styles`
+- build_htmls : will
+    - replace all occurrences of %TEMPLATE% to 'MyWebsite'
+    - rename all extension `htm` to `html`
+    - copy the result (stream) in `dist`
 
 
 ## Official example (https://github.com/gulpjs/gulp/tree/4.0)
